@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971.addCourses"
+             Title="addCourses">
+    <VerticalStackLayout>
+        <StackLayout>
+
+            <Label Text="Course name"/>
+            <Entry x:Name="classname"
+                   Placeholder=""/>
+
+            <Label Text="Instuctor"/>
+            <Entry x:Name="name"
+                  />
+
+            <Label Text="Instuctor email"/>
+            <Entry x:Name="email"
+                Placeholder=""/>
+
+            <Label Text="Instuctor phone"/>
+            <Entry x:Name="phone"
+                Placeholder=""/>
+<!--
+            <Label Text="Notes"/>
+            <Entry x:Name="notes"
+            Placeholder=""/> -->
+            
+            <Label Text="Select when class starts"/>
+            <DatePicker x:Name="classStart"></DatePicker>
+            <Label Text="Select when class ends"/>
+            <DatePicker x:Name="classEnd"></DatePicker>
+
+
+            <Label x:Name="label" TextColor="Black" Text="Select progress"></Label>
+            <Picker x:Name="picker" Title="" TextColor="Orange" ></Picker>
+
+            <Label Text = "Recieve notifications? No check means 'no'"  HorizontalOptions = "Center" />
+            <CheckBox x:Name="notify" HorizontalOptions = "Center" />
+
+            <Button Text="Save" Clicked="SaveButton_Clicked" TextColor ="#fff" VerticalOptions="EndAndExpand" BackgroundColor="DarkOrange"/>
+            <Button Text="Cancel" Clicked="ExitButton_Clicked" TextColor="#fff" BackgroundColor="HotPink"/>
+
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

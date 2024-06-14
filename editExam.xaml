@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971.editExam"
+             Title="editExam">
+    <VerticalStackLayout>
+
+        <VerticalStackLayout>
+            <Label Text = "Name"  HorizontalOptions = "Center" />
+            <Entry x:Name="name"  Text="{Binding Name}"/>
+            
+            <Label Text = "Type"  HorizontalOptions = "Center" />
+            <Entry x:Name="type"  Text="{Binding Type}"/>
+
+            <Label Text = "Start date"  HorizontalOptions = "Center" />
+            <DatePicker x:Name="startDate" Date="{Binding StartDate}" />
+
+            <Label Text = "End date"  HorizontalOptions = "Center" />
+            <DatePicker x:Name="endDate" Date="{Binding EndDate}" />
+
+            <Label Text = "Recieve notifications? No check means 'no'"  HorizontalOptions = "Center" />
+            <CheckBox x:Name="notify" HorizontalOptions = "Start" />
+
+            <Button Text="Save" Clicked="SaveButton_Clicked" TextColor ="#fff" VerticalOptions="EndAndExpand" BackgroundColor="DarkOrange"/>
+            <Button Text="Cancel" Clicked="ExitButton_Clicked" TextColor="#fff" BackgroundColor="HotPink"/>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+    
+</ContentPage>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971.notesInfo"
+             Title="notesInfo">
+    <VerticalStackLayout>
+        <StackLayout>
+
+            <Label Text="Title"/>
+            <Entry x:Name="title" Placeholder="" TextColor="Black" IsEnabled="False"  Text="{Binding Title}"/>
+
+            <Label Text="Notes"/>
+            <Editor x:Name="note"
+          
+           AutoSize="TextChanges"
+           HeightRequest="200"  IsEnabled="False" Text="{Binding Text}"/>
+
+
+            <Button Text="Share Notes" Clicked="shareNotes" 
+          BackgroundColor="LightSeaGreen" 
+          Margin="0,0,0,0"/>
+         
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

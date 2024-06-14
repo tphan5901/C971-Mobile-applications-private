@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971.MainPage"
+                Title="Course planner">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Course Planner"
+                     IconImageSource = "@drawable/babe.jpg" 
+                     Priority="2"
+                     Order="Primary" /> 
+
+        <ToolbarItem Text="Login"
+                     Order="Secondary" 
+                     Priority="0"/>
+
+        <ToolbarItem Text="Sign up"
+                     Order="Secondary" 
+                     Priority="1"/>
+
+    </ContentPage.ToolbarItems>
+    
+    <ScrollView>
+  <VerticalStackLayout
+            Padding="20,0"
+            Spacing="10">
+            <Image
+                Source="cutebabe.jpg"
+                HeightRequest="500"
+                Aspect="AspectFit" />
+
+            <Button Text="Add Term" Clicked="addTerm"/>
+            
+
+              <Label 
+                   Text="Terms"
+                   VerticalOptions="Center" 
+               HorizontalOptions="Start" />
+
+                <VerticalStackLayout x:Name="termStack" Spacing="15" Padding="20">
+                        <!-- Terms added here -->
+                    </VerticalStackLayout>
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>

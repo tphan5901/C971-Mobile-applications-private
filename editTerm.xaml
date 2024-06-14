@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="C971.editTerm"
+             Title="Edit term">
+    <VerticalStackLayout>
+        <VerticalStackLayout>
+            <Label Text="Name"/>
+            <Entry x:Name="name" Placeholder="Term Name" Text="{Binding Title}"/>
+
+            <Label Text="Start"/>
+            <DatePicker x:Name="startDate" Date="{Binding StartDate}" />
+
+            <Label Text="End"/>
+            <DatePicker x:Name="endDate" Date="{Binding EndDate}" />
+
+            <Button Text="Save" Clicked="SaveButton_Clicked"  Margin="0,400,0,0" TextColor ="#fff" VerticalOptions="EndAndExpand" BackgroundColor="DarkOrange"/>
+            <Button Text="Cancel" Clicked="ExitButton_Clicked"  Margin="0,0,0,0" TextColor="#fff" BackgroundColor="HotPink"/>
+
+        </VerticalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
