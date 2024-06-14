@@ -6,7 +6,7 @@
 
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Course Planner"
-                     IconImageSource = "@drawable/babe.jpg" 
+                     IconImageSource = "@drawable/" 
                      Priority="2"
                      Order="Primary" /> 
 
@@ -25,7 +25,7 @@
             Padding="20,0"
             Spacing="10">
             <Image
-                Source="cutebabe.jpg"
+                Source=""
                 HeightRequest="500"
                 Aspect="AspectFit" />
 
