@@ -11,7 +11,7 @@ namespace C971
     //when running this application, if you tap on any button multiple times, you will create multiple instances of that particular UI component. there are many problems with the UI. only contained with this framework
     public partial class MainPage : ContentPage
     {
-        public static databaseFunctions gate;
+        public readonly databaseFunctions gate;
 
         public static List<Term> Terms = new List<Term>();
         public static MainPage Current { get;  set; }
